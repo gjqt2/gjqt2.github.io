@@ -1,4 +1,4 @@
-function HTMLActuator() {
+﻿function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
@@ -190,17 +190,11 @@ HTMLActuator.prototype.clearMessage = function () {
 };
 
 HTMLActuator.prototype.scoreTweetButton = function () {
+  var text = "我在2048古剑版中得了" + this.score + "分 , 你能得多少分？";
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "http://service.weibo.com/share/share.php");
-  tweet.setAttribute("data-via", "拔剑断愁");
-  tweet.setAttribute("data-url", "http://gjqt2.github.io");
-  tweet.setAttribute("data-counturl", "http://gjqt2.github.io");
-  tweet.textContent = "新浪微博";
-
-  var text = "I scored " + this.score + " points at 2048_gjqt2 edition, a game where you " +
-             "join numbers to score high! #2048_gjqt2";
-  tweet.setAttribute("data-text", text);
+  tweet.setAttribute("href", "http://service.weibo.com/share/share.php?url=http://gjqt.github.io/mainRole&title="+text); 
+  tweet.textContent = "分享到微博"; 
 
   return tweet;
 };
