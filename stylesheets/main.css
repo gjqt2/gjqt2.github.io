@@ -352,7 +352,10 @@ hr {
     text-align: center;
     font-weight: bold;
     z-index: 10;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    background-position: center center !important; 
+    background-size: cover !important; 
+    background-repeat: no-repeat !important;  }
   .tile.tile-2 .tile-inner {
     background: #eee4da;
     line-height:40px;
@@ -421,12 +424,13 @@ hr {
   .tile.tile-65536 .tile-inner {
     color: #f9f6f2;
     line-height:80px;
-     background: #fff1c4;
+    background: #fff1c4;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-131072 .tile-inner {
     color: #f9f6f2;
     background: #fff1c4;
     line-height:80px;
+	background-image: url("../images/131072.jpg") !important;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
